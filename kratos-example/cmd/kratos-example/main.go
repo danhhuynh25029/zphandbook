@@ -2,7 +2,9 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"os"
+	"runtime"
 
 	"kratos-example/internal/conf"
 
@@ -78,6 +80,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Println(runtime.NumGoroutine())
+
 	defer cleanup()
 
 	// start and wait for stop signal

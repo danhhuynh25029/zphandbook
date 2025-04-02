@@ -26,7 +26,7 @@
 | flag | Mô tả                                         |
 |------|-----------------------------------------------|
 | -t   | Sử dụng khi cần download và test module       |
-| -x   | Hiển thị lệnh được thưc thi. Sử dụng để debug |
+| -x   | Hiển thị lệnh được thưc thi. Sử dụng để debug |    
 | -u   | Được sử dụng khi cần update module            |
 
 * Cài đặt và update module trong file go.mod

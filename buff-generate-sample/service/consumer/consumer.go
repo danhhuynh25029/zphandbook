@@ -14,13 +14,13 @@ import (
 
 /*
 	auto.offset.reset : latest // Bắt đầu lấy message gửi đi sau khi consumer bắt đầu chạy
-						earliest // Bắt đầu lấy message có offset được gửi đầu tiên
+						earliest // Bắt đầu lấy message có offset được gửi đầu tiên. Đọc lại tất cả message được commit. Nếu consumer group không lưu lại
 */
 
 func main() {
 	c, err := kafka.NewConsumer(&kafka.ConfigMap{
 		"bootstrap.servers":  "localhost",
-		"group.id":           "myGroup",
+		"group.id":           "myGroup1",
 		"auto.offset.reset":  "earliest",
 		"enable.auto.commit": false,
 	})
